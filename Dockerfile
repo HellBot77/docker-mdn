@@ -24,9 +24,7 @@ RUN npm ci && \
     CURRICULUM_ROOT=/curriculum \
     CONTRIBUTOR_SPOTLIGHT_ROOT=/mdn-contributor-spotlight/contributors \
     GENERIC_CONTENT_ROOT=/generic-content/files \
-    npm run build && \
-    rm -rf node_modules && \
-    npm ci --omit=dev
+    npm run build
 
 FROM node
 
